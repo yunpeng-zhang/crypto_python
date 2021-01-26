@@ -124,7 +124,7 @@ def cc2bt(df):
 cc_api = CryptoCompareAPI()
 DATA_DIR = './data'
 
-df = cc_api.getCandle('BTC', 'USDT', '1h', start_time="2017-04-01",
+df = cc_api.getCandle('BTC', 'USDT', '1h', start_time="2020-04-01",
                       end_time="2020-08-22", e='binance')
 df = cc2bt(df)
 df.to_csv(os.path.join(DATA_DIR, "BTC_USDT_1h.csv"), index=False)
